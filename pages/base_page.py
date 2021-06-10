@@ -42,8 +42,8 @@ class BasePage(object):
     def scroll_up(self):
         self.driver.execute_script("window.scrollTo(0,0)")
 
-    def find_copyright_text(self):
-        self.wait_element(*self.locator.COPYRIGHT_TEXT)
-        text_element = self.driver.find_element(*self.locator.COPYRIGHT_TEXT)
-        text = text_element.text
-        return text
+    # def find_copyright_text(self):
+    #     self.wait_element(*self.locator.COPYRIGHT_TEXT)
+    #     text_element = self.driver.find_element(*self.locator.COPYRIGHT_TEXT)
+    #     text = text_element.text
+    #     return text

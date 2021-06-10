@@ -1,6 +1,3 @@
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
 from pages.base_page import BasePage
 from utils.locators import *
 
@@ -11,6 +8,18 @@ class HomePage(BasePage):
         super().__init__(driver)
         self.locator = HomePageLocators
 
+    def click_faq(self):
+        link = self.driver.find_element(*self.locator.FAQ)
+        link.click()
+
+    def click_login_button(self):
+        button = self.driver.find_element(*self.locator.LOGIN_BUTTON)
+        button.click()
+    
+    def click_my_account(self):
+        super().wait_element(*self.locator.MY_ACCOUNT)
+        button = self.driver.find_element(*self.locator.MY_ACCOUNT)
+        button.click()
 
     def find_post_your_add_button(self):
         button_element = self.driver.find_element(*self.locator.POST_YOUR_ADD_BUTTON)
@@ -29,9 +38,3 @@ class HomePage(BasePage):
         return cities
 
 
-    def wait_element(self, *locator):
-        try:
-            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(locator))
-        except TimeoutException:
-            print("\n * ELEMENT NOT FOUND WITHIN GIVEN TIME! --> %s" % (locator[1]))
-            self.driver.quit()
