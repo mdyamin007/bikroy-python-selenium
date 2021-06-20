@@ -15,3 +15,8 @@ class LoginPage(BasePage):
         password_txtbox.send_keys(password)
         submit_button = self.driver.find_element(*self.locator.SUBMIT_BUTTON)
         submit_button.click()
+
+    def get_login_failed_text(self):
+        text_element = self.driver.find_element(*self.locator.LOGIN_FAILED_TEXT)
+        text = text_element.text
+        return text

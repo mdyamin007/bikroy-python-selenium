@@ -2,13 +2,15 @@ from selenium.webdriver.common.by import By
 
 
 class HomePageLocators(object):
-    COPYRIGHT_TEXT = (By.XPATH, "/html/body/div[3]/div[2]/div[1]")
     POST_YOUR_ADD_BUTTON = (By.XPATH, "/html/body/nav/div/ul[3]/li[5]/a")
     LOCATION_1 = (By.CLASS_NAME, "locations-1")
     LOCATION_2 = (By.CLASS_NAME, "locations-2")
     LOGIN_BUTTON = (By.XPATH, "/html/body/nav/div/ul[3]/li[4]/a/span")
     MY_ACCOUNT = (By.XPATH, "/html/body/nav/div/ul[3]/li[3]")
     FAQ = (By.LINK_TEXT, "FAQ")
+    COPYRIGHT_TEXT = (By.XPATH, "/html/body/div[3]/div[2]/div[1]")
+    ALL_ADS_LINK = (By.LINK_TEXT, "All ads")
+
     
 
 class CityPageLocators(object):
@@ -25,12 +27,17 @@ class ProductPageLocators(object):
 class AdsPageLocators(object):
     COPYRIGHT_TEXT = (By.XPATH, "/html/body/div[1]/div/div[1]/div[6]/div/div/div/div[3]/div[1]")
     LINKS_CLASS = (By.CLASS_NAME, "list-links--odRYW")
+    ALL_ADS_TEXT = (By.XPATH, "//div[contains(text(),'All ads in Bangladesh')]")
+    URGENT_CHECKBOX = (By.XPATH, "//body/div[@id='app-container']/div[@id='app-wrapper']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/label[1]/span[1]")
+    MOBILE_CHECKBOX = (By.XPATH, "//span[contains(text(),'Mobiles')]")
+    MOBILE_TEXT = (By.XPATH, "//h1[contains(text(),'Mobiles Phones and Accessories for Sale in Banglad')]")
 
 class LoginPageLocators(object):
     CONTINUE_WITH_EMAIL_BUTTON = (By.XPATH, "/html/body/div[1]/div/div[2]/div[3]/div[2]/div[2]/div/div[3]/button")
     EMAIL_TEXTBOX = (By.ID, "input_email")
     PASSWORD_TEXTBOX = (By.ID, "input_password")
     SUBMIT_BUTTON = (By.XPATH, "/html/body/div[1]/div/div[2]/div[3]/div[2]/div[2]/div/form/div[2]/div/button")
+    LOGIN_FAILED_TEXT = (By.XPATH, "/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[2]/div[1]/div[1]/span[1]")
 
 class DashboardPageLocators(object):
     SETTINGS = (By.LINK_TEXT, "Settings")
@@ -46,3 +53,5 @@ class FAQPageLocators(object):
     FAQS = (By.TAG_NAME, "dt")
     TEXT = (By.TAG_NAME, "dd")
 
+class Page404Locators(object):
+    TEXT = (By.XPATH, "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]")

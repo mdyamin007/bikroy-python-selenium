@@ -2012,3 +2012,66 @@ Gtk-Message: 21:03:32.885: Failed to load module "appmenu-gtk-module"
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1624168270036	geckodriver	INFO	Listening on 127.0.0.1:34905
+1624168271044	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWdtlAw"
+Gtk-Message: 11:51:15.081: Failed to load module "appmenu-gtk-module"
+1624168280020	Marionette	INFO	Marionette enabled
+
+(firefox:12337): Gtk-WARNING **: 11:51:20.413: Theme directory 16x16/panel of theme Mkos-Big-Sur-Night has no size field
+
+
+(firefox:12337): Gtk-WARNING **: 11:51:20.449: Theme directory 16x16@2x/places of theme Mkos-Big-Sur-Night has no size field
+
+
+(firefox:12337): Gtk-WARNING **: 11:51:20.469: Theme directory 24x24/apps of theme Mkos-Big-Sur-Night has no size field
+
+
+(firefox:12337): Gtk-WARNING **: 11:51:20.478: Theme directory 24x24@2x/panel of theme Mkos-Big-Sur-Night has no size field
+
+
+(firefox:12337): Gtk-WARNING **: 11:51:20.479: Theme directory 24x24@2x/panel of theme Mkos-Big-Sur-Night has no size field
+
+Gtk-Message: 11:51:49.579: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:51:49.579: Failed to load module "appmenu-gtk-module"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWdtlAw/search.json.mozlz4", (void 0)))
+
+(firefox:12337): GLib-GIO-WARNING **: 11:51:59.155: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1624168323122	Marionette	INFO	Listening on port 37925
+1624168323496	Marionette	WARN	TLS certificate errors will be ignored for this session
+Gtk-Message: 11:52:08.060: Failed to load module "appmenu-gtk-module"
+1624168330562	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1624168345989	Marionette	INFO	Stopped listening on port 37925
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2107,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2107","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:956","chrome://marionette/content/driver.js:GeckoDriver.prototype.quit:2860","chrome://marionette/content/server.js:despatch:291","chrome://marionette/content/server.js:execute:264","chrome://marionette/content/server.js:onPacket/<:237","chrome://marionette/content/server.js:onPacket:238","chrome://marionette/content/transport.js:_onJSONObjectReady/<:504"]}] Barrier: quit-application-granted
+1624168365545	geckodriver	INFO	Listening on 127.0.0.1:51113
+1624168367199	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileM3LR0x"
+Gtk-Message: 11:52:56.759: Failed to load module "appmenu-gtk-module"
+1624168382363	Marionette	INFO	Marionette enabled
+
+(firefox:12649): Gtk-WARNING **: 11:53:03.110: Theme directory 16x16/panel of theme Mkos-Big-Sur-Night has no size field
+
+
+(firefox:12649): Gtk-WARNING **: 11:53:03.171: Theme directory 16x16@2x/places of theme Mkos-Big-Sur-Night has no size field
+
+
+(firefox:12649): Gtk-WARNING **: 11:53:03.186: Theme directory 24x24/apps of theme Mkos-Big-Sur-Night has no size field
+
+
+(firefox:12649): Gtk-WARNING **: 11:53:03.208: Theme directory 24x24@2x/panel of theme Mkos-Big-Sur-Night has no size field
+
+
+(firefox:12649): Gtk-WARNING **: 11:53:03.210: Theme directory 24x24@2x/panel of theme Mkos-Big-Sur-Night has no size field
+
+Gtk-Message: 11:53:09.178: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:53:10.471: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:53:10.842: Failed to load module "appmenu-gtk-module"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileM3LR0x/search.json.mozlz4", (void 0)))
+
+(firefox:12649): GLib-GIO-WARNING **: 11:53:21.512: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+1624168403820	Marionette	INFO	Listening on port 46263
+1624168404836	Marionette	WARN	TLS certificate errors will be ignored for this session
+1624168405030	Marionette	INFO	Stopped listening on port 46263
+console.error: services.settings: 
+  main/cfr-fxa Signature failed  TypeError: NetworkError when attempting to fetch resource.
+1624168406086	geckodriver	INFO	Listening on 127.0.0.1:46087
+1624168407193	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyWg7JK"
+Gtk-Message: 11:53:27.353: Failed to load module "appmenu-gtk-module"

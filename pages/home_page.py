@@ -37,4 +37,13 @@ class HomePage(BasePage):
         cities = [cities_1[i].text for i in range(len(cities_1))] + [cities_2[i].text for i in range(len(cities_2))]
         return cities
 
+    def find_copyright_text(self):
+        self.wait_element(*self.locator.COPYRIGHT_TEXT)
+        text_element = self.driver.find_element(*self.locator.COPYRIGHT_TEXT)
+        text = text_element.text
+        return text
+
+    def click_all_ads(self):
+        all_ads = self.driver.find_element(*self.locator.ALL_ADS_LINK)
+        all_ads.click()
 
