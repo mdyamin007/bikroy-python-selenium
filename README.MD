@@ -1,0 +1,12 @@
+# AX_ehr_api_combined
+
+
+## Installation
+##### Use the package manager pip to install project dependency
+
+    $ cd to the directory where requirements.txt is located
+    $ run: pip3 install -r requirements.txt
+
+## Run Project
+    $ cd to the project directory
+    $ run: python3 TestConf/runtest.py
