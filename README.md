@@ -1,4 +1,4 @@
-# AX_ehr_api_combined
+# Bikroy.com UI Automation Testing
 
 
 ## Installation
